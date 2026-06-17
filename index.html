@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>しずく｜Works — AI × Design</title>
+<meta name="description" content="しずくの制作・実装ハブ。AIで構造を作る、デザインエンジニアの作品集。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500&family=Noto+Sans+JP:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F7F8FC; --fg:#1E2633; --muted:#6E7686; --primary:#5A84C9; --primary2:#7FA8E8;
+    --border:#DCE9FF; --soft:#EEF4FF; --reflect:#E6F5FF; --r:20px;
+    --serif:"Shippori Mincho",serif; --sans:"Zen Kaku Gothic New",system-ui,sans-serif; --body:"Noto Sans JP",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box} html,body{margin:0}
+  body{font-family:var(--body);color:var(--fg);line-height:1.85;
+    background:radial-gradient(48% 38% at 85% -4%,var(--reflect),transparent 70%),var(--bg);min-height:100vh;
+    padding:64px 24px 90px}
+  .wrap{max-width:880px;margin:0 auto}
+  header{border-left:2px solid var(--primary2);padding-left:24px;margin-bottom:14px}
+  .eyebrow{font-family:var(--sans);font-size:11px;letter-spacing:.24em;color:var(--primary);margin:0 0 12px}
+  h1{font-family:var(--serif);font-weight:700;font-size:clamp(28px,6vw,44px);margin:0 0 14px;letter-spacing:.04em}
+  .tagline{font-size:15px;color:var(--fg);margin:0 0 6px}
+  .sub{font-size:13px;color:var(--muted);margin:0;max-width:46ch}
+  .skills{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0 44px}
+  .skills span{font-family:var(--sans);font-size:11px;background:#fff;border:1px solid var(--border);border-radius:999px;padding:6px 14px}
+  h2.sec{font-family:var(--serif);font-size:15px;margin:0 0 16px;font-weight:700}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media(max-width:640px){.grid{grid-template-columns:1fr}}
+  a.work{display:block;text-decoration:none;color:inherit;background:rgba(255,255,255,.66);
+    -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+    border:1px solid var(--border);border-radius:var(--r);overflow:hidden;box-shadow:0 8px 24px rgba(30,38,51,.05);
+    transition:transform .25s ease,box-shadow .25s ease}
+  a.work:hover{transform:translateY(-4px);box-shadow:0 18px 44px rgba(90,132,201,.16)}
+  .wt{height:96px}
+  .wb{padding:18px 20px}
+  .tag{font-family:var(--sans);font-size:10px;letter-spacing:.12em;color:var(--primary)}
+  .wn{font-family:var(--serif);font-size:18px;font-weight:600;margin:5px 0 6px}
+  .wd{font-size:12.5px;color:var(--muted);margin:0}
+  .arrow{font-size:12px;color:var(--primary);margin-top:10px;display:inline-block}
+  .about{background:rgba(255,255,255,.5);border:1px solid var(--border);border-radius:var(--r);padding:24px 26px;margin-top:40px;font-size:13.5px}
+  .about b{font-family:var(--serif)}
+  footer{color:var(--muted);font-size:11.5px;margin-top:30px;line-height:1.9}
+  @media (prefers-reduced-motion: reduce){a.work{transition:none}}
+</style>
+</head>
+<body><div class="wrap">
+  <header>
+    <p class="eyebrow">SHIZUKU — AI × DESIGN ENGINEER</p>
+    <h1>つくるものに、<br>構造と透明感を。</h1>
+    <p class="tagline">AIを使える人ではなく、<strong>AIで構造を作れる人</strong>。</p>
+    <p class="sub">Figmaで設計し、Claude Codeで実装し、仕組みとして残す。淡色のまま、形だけ少し中性に。</p>
+  </header>
+
+  <div class="skills">
+    <span>UI / UXデザイン</span><span>Figma</span><span>React / TypeScript</span><span>Vite</span>
+    <span>デザインシステム</span><span>AI × 自動化</span><span>LP制作</span><span>アクセシビリティ</span>
+  </div>
+
+  <h2 class="sec">Works</h2>
+  <div class="grid">
+    <a class="work" href="https://saitoh19990720-art.github.io/lp-casestudy/">
+      <div class="wt" style="background:radial-gradient(60% 90% at 80% 10%,#DFF7FF,transparent 70%),linear-gradient(120deg,#EEF4FF,#C9DBFF)"></div>
+      <div class="wb"><span class="tag">CASE STUDY</span>
+        <p class="wn">制作ケーススタディ</p>
+        <p class="wd">LP・ツールの制作を「なぜそのUIか」で語る。世界観／商用／ロジックの3本＋設計思想。</p>
+        <span class="arrow">見る →</span></div>
+    </a>
+    <a class="work" href="https://saitoh19990720-art.github.io/aqua-cost/">
+      <div class="wt" style="background:linear-gradient(120deg,#EEF4FF,#DCE9FF 60%,#CFEFFF)"></div>
+      <div class="wb"><span class="tag">WEB APP</span>
+        <p class="wn">Aqua Cost</p>
+        <p class="wd">やさしい固定費見直しアプリ。月に一度、残す/止める/保留を静かに決める。React+Vite。</p>
+        <span class="arrow">使う →</span></div>
+    </a>
+    <a class="work" href="https://saitoh19990720-art.github.io/shizuku-agent-office/">
+      <div class="wt" style="background:linear-gradient(120deg,#F7F8FC,#EEF4FF 50%,#DFF7FF)"></div>
+      <div class="wb"><span class="tag">WEB APP</span>
+        <p class="wn">Shizuku Agent Office</p>
+        <p class="wd">AIを「社員」として扱う作業デスク。人間が監督、AIは社員。React+Tailwind。</p>
+        <span class="arrow">使う →</span></div>
+    </a>
+    <a class="work" href="https://saitoh19990720-art.github.io/herocard/">
+      <div class="wt" style="background:linear-gradient(120deg,#DCE9FF,#7FA8E8)"></div>
+      <div class="wb"><span class="tag">UI</span>
+        <p class="wn">HeroCard</p>
+        <p class="wd">淡色・明朝・AA配慮のヒーローカードUI。正本トークンで作る最小コンポーネント。</p>
+        <span class="arrow">見る →</span></div>
+    </a>
+  </div>
+
+  <div class="about">
+    <b>About</b><br>
+    UI/UXデザインとフロント実装の両方を、<b>設計思想（DESIGN.md）→トークン→コード→検証</b>のループで進めます。
+    かわいいだけでなく構造を、流行りに乗るだけでなく「なぜ」を。Apple HIG準拠で認知負荷を下げ、量産に寄せず“作”として成立させることを大切にしています。
+    在宅・チャット中心の働き方を希望。
+  </div>
+
+  <footer>© Shizuku Studio ／ 透明感のある構造設計。静かな美学と、再利用できる仕組み。</footer>
+</div></body></html>
