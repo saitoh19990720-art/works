@@ -11,6 +11,8 @@ AI × デザインの制作・実装ハブ。「AIを使える人」ではなく
 | Aqua Cost | やさしい固定費見直しアプリ（React/Vite） | https://saitoh19990720-art.github.io/aqua-cost/ |
 | Shizuku Agent Office | AI社員オフィス（React/Vite/Tailwind） | https://saitoh19990720-art.github.io/shizuku-agent-office/ |
 | HeroCard | 淡色・明朝・AA配慮のUIコンポーネント | https://saitoh19990720-art.github.io/herocard/ |
+| チェキメーカー | 画像とひとことをチェキ風PNGにするローカルツール（Canvas） | https://saitoh19990720-art.github.io/cheki-maker/ |
+| Shizuku OS Dashboard | 判断と再開を支える個人ダッシュボード（React/TypeScript） | https://shizuku-os-dashboard.vercel.app/#/case-study |
 
 ## 設計の軸
 - 設計思想（DESIGN.md）→ デザイントークン → コード → 視覚検証 のループ
